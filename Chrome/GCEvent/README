@@ -1,0 +1,5 @@
+[Description]
+This tool is used to parse Timeline data (saved from Chrome Developer Tools) to filter out GCEvent. It will help you analyze GC behavior, and tell the when it happens, how much memory is collected, and its duration. 
+
+[Usage]
+python gcevent.py <timeline_data>
