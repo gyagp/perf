@@ -1,4 +1,21 @@
 perf
 ====
 
-Things related to performance tuning
+Tools related to performance tuning
+
+[Chrome]
+GCEvent: Parse the log of timeline data in developer tools to get the statistical result of GC.
+
+
+[Linux]
+clean_cache: Clear the memory cache of a file.
+preload: Preload elf format binaries designated in parameters.
+timedLauncher: sample the launch time of GUI-based applications.
+VideoPerf: Calculate the FPS of video.
+
+
+[TODO]
+memtop: prints applications that consumes most of RAM.
+
+
+
