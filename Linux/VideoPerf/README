@@ -1,0 +1,15 @@
+methodology
+===========
+It's the tool to use the X Damage Extension to track modified regions of drawables,
+and Capture window XDamageNotify to calculate media player framerate.
+
+Steps:
+======
+1. Complile the tool -  make; (Pre-required packages:libX11-devel,libXdamage-devel)
+2. Before you Run the tool, you need to first play video at your test device;
+3. You need to use normal user(meego) to run the tool
+4. You can get help from  - ./VideoPerf -h
+5. Run the tool - ./VideoPerf -t 30[timeout time]  
+6. Wait for the timeout or Ctrl+C to quit this tool and get the average framerate and variance.
+
+Note: please make sure Program with executive authority! chmod +x VideoPerf

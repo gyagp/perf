@@ -1,0 +1,35 @@
+INTRODUCTION
+------------
+TimedLauncher is a toolkit used for sampling the launch time of GUI-based applications. The launch time here means from launching the application to the GUI window of the application showing up (all elements on the window is ready and no update happens any more).
+
+There are mainly two ways to launch an application:
+Launch by inputing CMD-Line (Mode C): from press 'Enter' key at CMD-line to the GUI window showing up.
+Launch by clicking GUI button (Mode G): from click the button for the application to the GUI window showing up.
+Mode G has more overhead than Mode C due to cost of the application launcher of system. And Mode G is the real experience of End-User while Mode C is more useful for performance tuning by engineer.
+
+TimedLauncher supports both application invoking methods. For Launch by inputing CMD-Line, the cmd for launching the application should be passed to TimedLauncher, which will then track the time stamp of launching the application (The time stamp that it invokes the cmd line) and use effectHunter (a sub-tool for collecting FPS/Latency information by tracking the XDamage event of one specified window) to get the time stamp of last XDamage event on the root window. The launch time can then be calculated by the difference of the two time stamps; For Launch by clicking GUI button, TimedLauncher will use eventHunter (a sub-tool for collecting event information from /dev/input interfaces) to track the time stamp of clicking the button for the application, and use the same method to get the time stamp of GUI window ready. 
+
+
+USAGE
+------------
+./timedLauncher [-c CMD_FILE | -i INPUT_EVENT_INTERFACE] <-t timeOut> <-x>
+-t    set the time out for launch time sampling, default mode is 10s.
+-c    set the file containing cmd line to launch application. Turn into GUI click mode if not set.
+-i    set the input event interface for your specified device. E.X.: /dev/input/event6
+-x    output all the raw log.
+-h    output help info.
+
+You should either work under CMD launch mode with '-c CMD_FILE' or work under GUI launch mode with '-i INPUT_EVENT_INTERFACE'.
+a). CMD launch mode
+    E.X.:  ./timedLauncher -c my_cmd_file
+    Notes: please only use one cmd line to launch your app. (Only the first line of cmd from your cmd file will be read, and other lines will be ignored)
+b). GUI launch mode
+    E.X.:  ./timedLauncher -i /dev/input/eventX
+    Notes: currently, only mouse is supported as the input device for clicking button. And there are two simple ways to get the right input event interface for your mouse: 
+           Way 1. Firstly remove your mouse from your target device/machine;
+              Execute this cmd 'ls /dev/input/event*', the result may like the following:
+              (/dev/input/event0  /dev/input/event1  /dev/input/event2  /dev/input/event3  /dev/input/event4  /dev/input/event5  /dev/input/event7  /dev/input/event8  /dev/input/event9);
+              Then connect mouse to your target device/machine, and execute the cmd 'ls /dev/input/event*' again, the result may like the following:
+              (/dev/input/event0  /dev/input/event1  /dev/input/event2  /dev/input/event3  /dev/input/event4  /dev/input/event5  /dev/input/event6  /dev/input/event7  /dev/input/event8  /dev/input/event9);
+              Then the newly added one '/dev/input/event6' should be the input interface for your mouse.
+           Way 2. Connect mouse to your target device/machine, and then use 'cat' to read the all the input interface under /dev/input. For example, execute 'cat /dev/input/event1', and then move or click your mouse. There will be some output from the 'cat' cmd if the interface is just the one for mouse. Follow this way to query all the /dev/input/eventX and then you will get the right one.
