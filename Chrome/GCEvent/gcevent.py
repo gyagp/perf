@@ -11,11 +11,11 @@ def analyze():
     file = open(sys.argv[1], 'r');
 
     patternStartTime = re.compile('"startTime":(\d+.\d+)');
-    # Format is "startTime":1343964245648.726<,"stackTrace":[]>,"data":{"usedHeapSizeDelta":1091080},"endTime":1343964245653.7258,"type":"GCEvent","usedHeapSize":3725312,"totalHeapSize":9260416
+    # Format is "startTime":1343964245648.726<,"stackTrace":[]>,"data":{"usedHeapSizeDelta":1091080,"reason":"idle notification: contexts disposed"},"endTime":1343964245653.7258,"type":"GCEvent","usedHeapSize":3725312,"totalHeapSize":9260416
     # stackTrace is optional
     patternExpect = re.compile('GCEvent');
     # Should not be greedy because there might be multiple GCEvent in a line
-    pattern = re.compile('"startTime":(\d+.\d+),.*?"data":{"usedHeapSizeDelta":(\d+)},"endTime":(\d+.\d+),"type":"GCEvent"');
+    pattern = re.compile('"startTime":(\d+.\d+),.*?"data":{"usedHeapSizeDelta":(\d+),"reason":(.*?)},"endTime":(\d+.\d+),"type":"GCEvent"');
         
     startTime = 0;
     
@@ -39,14 +39,20 @@ def analyze():
         match = pattern.findall(line);
         
         if len(match) != numberExpect:
-            print "Pattern is not correct, so there might be some GCEvent is missed";
+            print "Pattern is not correct for following line, so there might be some GCEvent is missed";
+            print "The expected GCEvent number is " + str(numberExpect) + ", but the actual match is " + str(len(match));
+            print line;
             return -1;
 
         for i in range(0, numberExpect):
             gcStartTimeTemp = "%.0f" % (float(match[i][0]) - float(startTime));
             gcSizeTemp = int(match[i][1]);
-            gcDurationTemp = "%.3f" % (float(match[i][2]) - float(match[i][0]));
-            print gcStartTimeTemp, gcSizeTemp, gcDurationTemp;
+            gcReasonTemp = match[i][2];
+            gcDurationTemp = "%.3f" % (float(match[i][3]) - float(match[i][0]));
+            
+            patternIdleNotification = re.compile('idle notification:');
+            if not patternIdleNotification.search(gcReasonTemp):
+                print gcStartTimeTemp, gcSizeTemp, gcReasonTemp, gcDurationTemp;
                 
             
     file.close();    
