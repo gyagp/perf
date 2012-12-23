@@ -1,0 +1,15 @@
+[
+    ["iostat", "I/O", "Big %iowait means poor I/O performance. Need to install package sysstat."],
+    ["free", "memory", ""],
+    ["cat /proc/meminfo", "memory", "More detailed info comparing to free"],
+    ["pmap", "memory", ""]
+    ["mpstat", "CPU", "MultiProcessor Statistics. "],
+    ["netstat", "network", [
+        "-a show all socket info",
+        "-r Show routing information",
+        "-i Show network interface statistics",
+        "-s Show network protocol statistics"]
+    ],
+    ["nmon", "CPU, memory, I/O, network, process, etc", "Need to install nmon."],
+    
+]
