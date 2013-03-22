@@ -1,0 +1,48 @@
+Introduction
+
+Powertop is a Linux tool that helps you find those programs that are misbehaving while your computer is idle. PowerTOP combines various sources of information from the kernel into one convenient screen so that you can see how well your system is doing at saving power, and which components are responsible for power consumption 
+
+PowerTOP has these four basic goals:
+Show how well your system is using the various hardware power-saving features.
+Show you the culprit software components that are preventing optimal usage of your hardware power savings.
+Help Linux developers test their applications and achieve optimal behaviors.
+Provide you with tuning suggestions to achieve low power consumption.
+Usage
+
+--debug: run in debug mode
+--version: print version information
+--calibrate: runs powertop in calibration mode
+--extech=devnode: uses an Extech Power analyzer for measurements
+--html[=FILENAME]: generate a html report
+--csv[=FILENAME]: generate a csv report
+--time[=secs]: genrate a html report for secs
+--iterations: number of iterations per time selected
+--help: print help information
+Example: powertop -i 10 -t 60 --html
+Download Powertop test script
+Hardware Requirement
+
+Pre-required Packages
+
+Installation
+
+Download Powertop test script to test device
+Make the test script executable
+#chmod +x powertop-m.sh
+Execution
+
+Steps to collect data:
+Boot up device and wait for at least 5 minutes
+Switch to console mode (press ‘Ctrl+Alt+->’ for example), login as root and run test script ./powertop-m.sh
+Disconnect all unnecessary peripheral devices (such as: keyboard, mouse)
+Wait until the script completed and post the wakeups value
+Record the wakeups value
+Results
+
+The wakeups value
+The detailed result can be found from powertop html file.
+Analysis
+
+First use browser to open the result html file;
+At Power consumption summary, It lists the total wakeups and the top 10 wakeup processes. The more wakeups, the higher power consumption.
+At Processor Idle state report and frequency report, It shows the processor state and frequency.

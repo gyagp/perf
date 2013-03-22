@@ -1,0 +1,30 @@
+#############################################################################################################################
+Project:        touchEffect
+Description:    A benchmark used for measuring graphics performance when playing gestures like panning, pinching and swiping.
+
+touchEffect is a tool used for sampling the graphics performance (User Experience) when inputing gestures (pan, pinch, swipe). It is constructed with two components: gesture simulator and data sampling module.It works with gesture-supported widget or system UI. There are two gesture simulators: gestureSim is one of them working with X support. It uses Xtst to simulate gesture by sending X events. Another gesture simulator named 'eventHunter' works at a lower-level, which uses linux device input interface to generate event just like real devices (TouchPad, TouchScreen, etc.). At data sampling part, effectHunter is a the tool to collect FPS/Latency information by tracking the XDamage event of one specified window, which is also based on X. The working process is like this: Firstly, End-User specifies a gesture-supported widget (or system UI) with 'xwininfo' utility in X based system; Then, touchEffect will invoke gestureSim/eventHunter to auto-generates gestures; At the same time, it will invoke the effectHunter to collect FPS/Latency of the widget. Currently, gestures including pan, swipe, swiping, pinch, spread, and zooming are supported.
+#############################################################################################################################
+
+1. Build project
+At your cmd line, type in: make
+
+2. Execution
+At your cmd line, execute with "perl touchEffect.pl -w TheWidgetName", you can also specify the time interval (in millisecond) between each gesture with param "-t YourTimeInterval", defaultly, the time interval is 50 (ms).
+
+
+* Usage
+perl touchEffect.pl [-wi widgetID] <-m FPS|TIMESTAMP> <-g SWIPE|SWIPING|PAN|PANNING|PINCH> [-t timeInterval] [-d eventDelay] [-o B|L] [-c count]
+option "wi": The id (get with xwininfo) of touch widget. You can specify either the name or the id, and id is with high priority.
+option "t": The time interval between two gestures.
+option "d": The time delay between two events.
+option "m": The mode of sampling: FPS, TIMESTAMP.
+option "g": The gesture type: SWIPE, SWIPING, PAN, PANNING, PINCH.
+option "o": The orientation of the gesture: B - Breadthways, L - Lengthways. Default is B.
+option "c": The sampling count of collection. Default is 20.
+
+* Examples
+Measure the FPS while swiping the meegohome widget ( indicate the widget by widgetID ).
+$ xwininfo(click your mouse at window)
+$ perl touchEffect.pl -wi 0x140000f(get from xwininfo) -m FPS -g SWIPING
+
+

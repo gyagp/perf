@@ -1,0 +1,4 @@
+Run memuse:
+$ ./memuse > /tmp/memuse.log
+We can get process memory consumption through:
+$ cat /tmp/memuse.log | grep <process>

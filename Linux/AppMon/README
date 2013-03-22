@@ -1,0 +1,33 @@
+********************
+README
+********************
+The entry point is appMon.py, type "python appMon.py -h" for usage info.
+For the first time use, please type "make clean && make" to make binary for this tool.
+
+* Introduction
+
+Appmon is a light-weight tool running background to monitor specified application or applications.
+It consumes extremely low resources, collect application runtime data including CPU usage, memory footprint, and other system runtime data including Cn residency time, Wakeup times per second, etc. 
+It also be able to show a curve graph of each indicator.
+
+* Execution
+CPU occupation when play video:
+    On test platform, manual play "kauai_720p_MPEG4_AVC_H.264_AAC_new.mp4" using the videoplayer;
+    On remote pc with cmd: "1.ssh to test platform; 2.python appMon.py -p xxx -c 10 -d 15 -D"
+CPU occupation when system idles:
+    Reboot the test platform and do nothing;
+    On remote pc with cmd: "1.ssh to test platform; 2.python appMon.py -c 10 -d 15 -D"
+    
+* Results
+
+The result can be found from the screen.
+
+* Android Specific
+
+Download appMon for android, you will get 3 tools:
+appmon is used for CPU consumption of system/process testing in Android.
+    In the termianl : appmon -c 10 -d 20 -p PID_of_PROCESS
+It will generate a appmon.log in the current directory.
+    genData.py & uniform.py will process the appmon.log to a format report with average values.
+    python genData.py
+    python uniform.py (you can change the path of log in the scripts)

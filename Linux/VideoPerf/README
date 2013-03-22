@@ -13,3 +13,12 @@ Steps:
 6. Wait for the timeout or Ctrl+C to quit this tool and get the average framerate and variance.
 
 Note: please make sure Program with executive authority! chmod +x VideoPerf
+
+
+* Execution
+    On netbook, disable visual effects when playing: on totem menu, Edit->Preferences->Display, cancel the check box on "Show visual effects when an audio file is played".
+    Set fullscreen mode for the media player on the test platform.
+    On test platform, manual play "kauai_720p_MPEG4_AVC_H.264_AAC_new.mp4" using the videoplayer;
+    On remote pc with cmd: "1,ssh to test platform ; 2, you should login as user;
+$ ./VideoPerf -t [timeout]
+    The result will be displayed on the control machine's screen.

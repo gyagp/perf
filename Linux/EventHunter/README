@@ -1,0 +1,12 @@
+Execution
+
+Usage:
+eventHunter -i input_event_interface [-x]
+-i set the input event interface for your specified device.
+-x output information for all the events.
+-w the gesture generating eg. SWIPING/ZOOMING/SWIPE
+-o the orientation of the flip eg. L means vertical
+Example: 
+./eventHunter -i /dev/input/event3 -x (means starting eventHunter by hooking to /dev/input/event3)
+___________________________________________________________________________________
+eventHunter is a tool used to hook to one input device for event listening/sending.

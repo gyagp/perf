@@ -1,0 +1,249 @@
+[header]
+	delay = 5
+	count = 40
+	maxcstate = 6
+	totalmem = 851656
+	cpuidle_flag = 1
+	acpi_flag = 1
+[Frame 0]
+	[cpu  ] idle= 935 total= 1002
+	[mem  ] free= 212944 buffered= 212 cache= 238092
+	[power] wakeup_persec= 453 C0_time= 1006532 C1_time= 88411 C2_time= 277232 C3_time= 194715 C4_time= 8432230 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 688
+[End]
+[Frame 1]
+	[cpu  ] idle= 901 total= 999
+	[mem  ] free= 212904 buffered= 212 cache= 238100
+	[power] wakeup_persec= 504 C0_time= 1041240 C1_time= 118360 C2_time= 515842 C3_time= 388358 C4_time= 7936200 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 688
+[End]
+[Frame 2]
+	[cpu  ] idle= 929 total= 1002
+	[mem  ] free= 213036 buffered= 212 cache= 238100
+	[power] wakeup_persec= 436 C0_time= 1035393 C1_time= 93852 C2_time= 317917 C3_time= 193004 C4_time= 8359715 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 688
+[End]
+[Frame 3]
+	[cpu  ] idle= 910 total= 1000
+	[mem  ] free= 210548 buffered= 212 cache= 240272
+	[power] wakeup_persec= 452 C0_time= 1219335 C1_time= 107385 C2_time= 417604 C3_time= 205572 C4_time= 8049998 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 5 rss= 688
+[End]
+[Frame 4]
+	[cpu  ] idle= 936 total= 1003
+	[mem  ] free= 210672 buffered= 212 cache= 240272
+	[power] wakeup_persec= 437 C0_time= 976721 C1_time= 91379 C2_time= 293206 C3_time= 231016 C4_time= 8407647 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 692
+[End]
+[Frame 5]
+	[cpu  ] idle= 941 total= 1002
+	[mem  ] free= 210828 buffered= 212 cache= 240272
+	[power] wakeup_persec= 440 C0_time= 922869 C1_time= 97393 C2_time= 264381 C3_time= 184391 C4_time= 8530069 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 692
+[End]
+[Frame 6]
+	[cpu  ] idle= 942 total= 1003
+	[mem  ] free= 210952 buffered= 212 cache= 240272
+	[power] wakeup_persec= 442 C0_time= 892430 C1_time= 110570 C2_time= 322093 C3_time= 159923 C4_time= 8514557 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 692
+[End]
+[Frame 7]
+	[cpu  ] idle= 876 total= 1002
+	[mem  ] free= 210952 buffered= 212 cache= 240272
+	[power] wakeup_persec= 503 C0_time= 1251722 C1_time= 157412 C2_time= 793989 C3_time= 348506 C4_time= 7446276 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 692
+[End]
+[Frame 8]
+	[cpu  ] idle= 939 total= 1002
+	[mem  ] free= 210944 buffered= 212 cache= 240272
+	[power] wakeup_persec= 442 C0_time= 926551 C1_time= 101210 C2_time= 324387 C3_time= 208550 C4_time= 8438262 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 692
+[End]
+[Frame 9]
+	[cpu  ] idle= 921 total= 1003
+	[mem  ] free= 210952 buffered= 212 cache= 240272
+	[power] wakeup_persec= 437 C0_time= 1096599 C1_time= 83386 C2_time= 330818 C3_time= 206207 C4_time= 8282395 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 8 rss= 692
+[End]
+[Frame 10]
+	[cpu  ] idle= 934 total= 1003
+	[mem  ] free= 211068 buffered= 212 cache= 240272
+	[power] wakeup_persec= 474 C0_time= 1011592 C1_time= 122588 C2_time= 257581 C3_time= 187743 C4_time= 8419532 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 692
+[End]
+[Frame 11]
+	[cpu  ] idle= 766 total= 1002
+	[mem  ] free= 210936 buffered= 212 cache= 240272
+	[power] wakeup_persec= 582 C0_time= 2620646 C1_time= 132871 C2_time= 1001377 C3_time= 408782 C4_time= 5836324 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 696
+[End]
+[Frame 12]
+	[cpu  ] idle= 928 total= 1002
+	[mem  ] free= 210680 buffered= 212 cache= 240276
+	[power] wakeup_persec= 470 C0_time= 1050627 C1_time= 113049 C2_time= 300913 C3_time= 214845 C4_time= 8320566 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 696
+[End]
+[Frame 13]
+	[cpu  ] idle= 939 total= 1003
+	[mem  ] free= 210524 buffered= 212 cache= 240276
+	[power] wakeup_persec= 433 C0_time= 951648 C1_time= 148442 C2_time= 356128 C3_time= 139126 C4_time= 8404656 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 8 rss= 696
+[End]
+[Frame 14]
+	[cpu  ] idle= 905 total= 1002
+	[mem  ] free= 210664 buffered= 212 cache= 240276
+	[power] wakeup_persec= 464 C0_time= 968862 C1_time= 92651 C2_time= 514961 C3_time= 335575 C4_time= 8087075 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 696
+[End]
+[Frame 15]
+	[cpu  ] idle= 942 total= 1000
+	[mem  ] free= 210564 buffered= 212 cache= 240276
+	[power] wakeup_persec= 433 C0_time= 909797 C1_time= 83887 C2_time= 255702 C3_time= 180399 C4_time= 8570215 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 696
+[End]
+[Frame 16]
+	[cpu  ] idle= 922 total= 998
+	[mem  ] free= 209936 buffered= 212 cache= 240280
+	[power] wakeup_persec= 498 C0_time= 1243725 C1_time= 97008 C2_time= 306214 C3_time= 231846 C4_time= 8105909 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 696
+[End]
+[Frame 17]
+	[cpu  ] idle= 915 total= 1003
+	[mem  ] free= 209820 buffered= 212 cache= 240280
+	[power] wakeup_persec= 464 C0_time= 1302853 C1_time= 132784 C2_time= 417460 C3_time= 214098 C4_time= 7932805 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 696
+[End]
+[Frame 18]
+	[cpu  ] idle= 955 total= 1000
+	[mem  ] free= 209944 buffered= 212 cache= 240280
+	[power] wakeup_persec= 433 C0_time= 909003 C1_time= 89812 C2_time= 224615 C3_time= 200524 C4_time= 8576046 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 696
+[End]
+[Frame 19]
+	[cpu  ] idle= 956 total= 1001
+	[mem  ] free= 209944 buffered= 212 cache= 240280
+	[power] wakeup_persec= 422 C0_time= 905869 C1_time= 81539 C2_time= 238403 C3_time= 187600 C4_time= 8586589 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 700
+[End]
+[Frame 20]
+	[cpu  ] idle= 952 total= 1002
+	[mem  ] free= 210076 buffered= 212 cache= 240280
+	[power] wakeup_persec= 437 C0_time= 934616 C1_time= 94751 C2_time= 321077 C3_time= 203232 C4_time= 8442643 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 700
+[End]
+[Frame 21]
+	[cpu  ] idle= 955 total= 1002
+	[mem  ] free= 210076 buffered= 212 cache= 240280
+	[power] wakeup_persec= 444 C0_time= 914468 C1_time= 94510 C2_time= 402639 C3_time= 241507 C4_time= 8346876 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 700
+[End]
+[Frame 22]
+	[cpu  ] idle= 909 total= 1000
+	[mem  ] free= 210076 buffered= 212 cache= 240280
+	[power] wakeup_persec= 484 C0_time= 1059027 C1_time= 109614 C2_time= 464478 C3_time= 236899 C4_time= 8129982 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 700
+[End]
+[Frame 23]
+	[cpu  ] idle= 939 total= 1000
+	[mem  ] free= 210068 buffered= 212 cache= 240280
+	[power] wakeup_persec= 475 C0_time= 937307 C1_time= 112678 C2_time= 292655 C3_time= 211874 C4_time= 8445486 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 700
+[End]
+[Frame 24]
+	[cpu  ] idle= 940 total= 1002
+	[mem  ] free= 210208 buffered= 212 cache= 240284
+	[power] wakeup_persec= 453 C0_time= 921937 C1_time= 87167 C2_time= 355786 C3_time= 173720 C4_time= 8461390 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 700
+[End]
+[Frame 25]
+	[cpu  ] idle= 927 total= 1000
+	[mem  ] free= 210044 buffered= 212 cache= 240284
+	[power] wakeup_persec= 511 C0_time= 1038669 C1_time= 126810 C2_time= 445313 C3_time= 267299 C4_time= 8121909 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 5 rss= 700
+[End]
+[Frame 26]
+	[cpu  ] idle= 940 total= 1001
+	[mem  ] free= 210192 buffered= 212 cache= 240288
+	[power] wakeup_persec= 495 C0_time= 970370 C1_time= 95304 C2_time= 437519 C3_time= 226750 C4_time= 8270057 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 700
+[End]
+[Frame 27]
+	[cpu  ] idle= 903 total= 1004
+	[mem  ] free= 210068 buffered= 212 cache= 240288
+	[power] wakeup_persec= 492 C0_time= 1262069 C1_time= 98392 C2_time= 543811 C3_time= 276509 C4_time= 7819219 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 8 rss= 704
+[End]
+[Frame 28]
+	[cpu  ] idle= 904 total= 1000
+	[mem  ] free= 209944 buffered= 212 cache= 240288
+	[power] wakeup_persec= 517 C0_time= 1043106 C1_time= 122104 C2_time= 636853 C3_time= 352052 C4_time= 7845885 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 704
+[End]
+[Frame 29]
+	[cpu  ] idle= 939 total= 1001
+	[mem  ] free= 209820 buffered= 212 cache= 240292
+	[power] wakeup_persec= 453 C0_time= 931474 C1_time= 107799 C2_time= 370498 C3_time= 233811 C4_time= 8356216 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 5 rss= 704
+[End]
+[Frame 30]
+	[cpu  ] idle= 944 total= 1000
+	[mem  ] free= 209688 buffered= 212 cache= 240292
+	[power] wakeup_persec= 434 C0_time= 894408 C1_time= 100491 C2_time= 370442 C3_time= 221710 C4_time= 8412949 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 704
+[End]
+[Frame 31]
+	[cpu  ] idle= 939 total= 1001
+	[mem  ] free= 209812 buffered= 212 cache= 240292
+	[power] wakeup_persec= 461 C0_time= 937951 C1_time= 129462 C2_time= 381821 C3_time= 191538 C4_time= 8358927 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 704
+[End]
+[Frame 32]
+	[cpu  ] idle= 943 total= 1001
+	[mem  ] free= 209812 buffered= 212 cache= 240292
+	[power] wakeup_persec= 436 C0_time= 920867 C1_time= 81306 C2_time= 309476 C3_time= 172901 C4_time= 8515450 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 704
+[End]
+[Frame 33]
+	[cpu  ] idle= 904 total= 999
+	[mem  ] free= 209556 buffered= 212 cache= 240292
+	[power] wakeup_persec= 491 C0_time= 1293432 C1_time= 125084 C2_time= 572334 C3_time= 262844 C4_time= 7740251 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 704
+[End]
+[Frame 34]
+	[cpu  ] idle= 948 total= 1002
+	[mem  ] free= 209680 buffered= 212 cache= 240296
+	[power] wakeup_persec= 433 C0_time= 975152 C1_time= 108062 C2_time= 258781 C3_time= 168462 C4_time= 8489543 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 5 rss= 704
+[End]
+[Frame 35]
+	[cpu  ] idle= 917 total= 1001
+	[mem  ] free= 209548 buffered= 212 cache= 240296
+	[power] wakeup_persec= 489 C0_time= 1072422 C1_time= 128160 C2_time= 509356 C3_time= 272845 C4_time= 8016233 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 8 rss= 704
+[End]
+[Frame 36]
+	[cpu  ] idle= 956 total= 1002
+	[mem  ] free= 209424 buffered= 212 cache= 240300
+	[power] wakeup_persec= 451 C0_time= 934727 C1_time= 108275 C2_time= 317381 C3_time= 178753 C4_time= 8460085 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 704
+[End]
+[Frame 37]
+	[cpu  ] idle= 889 total= 1001
+	[mem  ] free= 209524 buffered= 212 cache= 240304
+	[power] wakeup_persec= 479 C0_time= 1467807 C1_time= 110809 C2_time= 586890 C3_time= 253462 C4_time= 7580861 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 5 rss= 704
+[End]
+[Frame 38]
+	[cpu  ] idle= 956 total= 1002
+	[mem  ] free= 209548 buffered= 212 cache= 240304
+	[power] wakeup_persec= 430 C0_time= 916105 C1_time= 73220 C2_time= 305457 C3_time= 225956 C4_time= 8478450 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 7 rss= 704
+[End]
+[Frame 39]
+	[cpu  ] idle= 905 total= 1003
+	[mem  ] free= 208804 buffered= 212 cache= 240304
+	[power] wakeup_persec= 459 C0_time= 1354990 C1_time= 119448 C2_time= 319874 C3_time= 196422 C4_time= 8009217 C5_time= 0 C6_time= 0
+	[app  appmon 5481 ] cpu= 6 rss= 704
+[End]
+[MaxAppNum 1 ]
+[Total 40 frames]
